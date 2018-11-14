@@ -12,6 +12,7 @@ export class ContactService {
 
   // retrieving ContactService
   getContacts() {
+    console.log("get successfully");
     return this.http.get('http://localhost:3000/api/contacts').pipe(map(res => res.json()));
   }
 
