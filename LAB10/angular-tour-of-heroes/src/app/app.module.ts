@@ -5,14 +5,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { RemoveSpacesPipe } from './remove-spaces.pipe';
-import { DirectivePipe } from './directive.pipe'; // <-- NgModel lives here
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     RemoveSpacesPipe,
-    DirectivePipe
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
