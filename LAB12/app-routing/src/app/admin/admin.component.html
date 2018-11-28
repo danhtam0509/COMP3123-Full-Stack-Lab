@@ -1,0 +1,12 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input name="first" ngModel id="first" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea name="comment" ngModel id="comment" cols="30" rows="5" class="form-control"></textarea>
+    </div>
+  <button class="btn btn-primary">Submit</button>
+
+</form>
